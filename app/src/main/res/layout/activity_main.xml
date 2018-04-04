@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!--<ListView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/list"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_width="match_parent"-->
+    <!--/>-->
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,7 +19,8 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context="com.udacity.exoplayertest.MainActivity">
+        tools:context="com.udacity.exoplayertest.MainActivity"
+        android:weightSum="1">
 
         <!--<com.google.android.exoplayer2.ui.SimpleExoPlayerView
             android:id="@+id/playerView"
@@ -28,13 +37,14 @@
             android:text="fwfwr fwrf wrfwrfwr" />
 
         <TextView
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
             android:background="#0F0"
             android:text="sjfnjfwij fwfpnf on  ffèn nf prjnf
 q jn èjnfg èejng èjn geèjgnèejng èegn
 qe gnjqe gnejng èjng ejng eègn èo gneè" />
-
 
     </LinearLayout>
 </ScrollView>

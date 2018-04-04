@@ -4,6 +4,7 @@ import android.content.Context;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ListView;
 
 import com.google.android.exoplayer2.DefaultLoadControl;
 import com.google.android.exoplayer2.DefaultRenderersFactory;
@@ -35,6 +36,9 @@ public class MainActivity extends AppCompatActivity implements Player.EventListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ListView list = findViewById(R.id.list);
+        list.setAdapter(new Adapter(this));
 
         /*simpleExoPlayerView = findViewById(R.id.playerView);
         initializePlayer();
